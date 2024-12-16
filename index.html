@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom favicon  -->
+    <link rel="shortcut icon" href="/assets/img/logo-1.jpg" type="image/x-icon">
+    <!-- fontAwesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Naventra</title>
+</head>
+
+<body>
+
+
+    <!-- navbar container -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-md">
+            <a class="navbar-brand m-0 fw-medium fs-2 me-auto" href="index.html"><img src="/assets/img/logo-1.jpg"
+                    alt="logo"></a>
+            <li class="nav-item d-flex align-items-center icon d-flex d-md-none">
+                <button class="nav-icon btn toggle-dark-mode border-0 rounded-pill" onclick="toggleMode()">
+                    <i class="fa-solid fa-moon text-dark"></i>
+                </button>
+            </li>
+            <button class="btn navbar-toggler d-lg-none special-icons" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="assets/img/menu.png" alt="" class="cart-top-small-size"
+                    style="width: 42px;border-radius: 50%;padding: 5px;">
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="/index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/services.html">Services</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- banner with scroll container-->
+    <section class="quote text-lg-start text-center py-5">
+        <div class="gradient"></div>
+
+        <div class="container">
+            <div class="qoute-text py-5 pe-lg-5 me-lg-5">
+                <h1 style="color: rgb(31, 198, 31);">Your Gateway To Excellence</h1>
+            <p class="text-light px-4 px-md-0">At Naventra, we strive to bridge the gap
+                between ambition and achievement. <br class="d-none d-lg-block"> With
+                expertise in IT consulting, global
+                education pathways, and professional <br class="d-none d-lg-block">
+                development, we empower individuals
+                and organizations to thrive in a <br class="d-none d-lg-block">
+                competitive world.</p>
+            <button class="btn btn-outline-light">GET IN TOUCH >></button>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="banner ">
+        <img src="https://scontent.fblr2-3.fna.fbcdn.net/v/t39.30808-6/301845378_475364144597715_5976594745296211007_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=w-H-4jAEt3UQ7kNvgFcfIYY&_nc_zt=23&_nc_ht=scontent.fblr2-3.fna&_nc_gid=AhmQl9Hbp7Qs5GJYIXUPy8s&oh=00_AYBN_VXqsxk49ty8vSI7RR-BsStG1d-BA1UTPrFQMoXTMg&oe=6764DF3F" alt="banner-3" class="w-100 d-block">
+        <div class="txt-banner position-absolute top-50 end-50 ms-5 text-light d-none d-xl-block">
+            <h1 style="color: rgb(31, 198, 31);">Your Gateway To Excellence</h1>
+            <p>At Naventra, we strive to bridge the gap
+                between ambition and achievement. With
+                expertise in IT consulting, global
+                education pathways, and professional
+                development, we empower individuals
+                and organizations to thrive in a
+                competitive world.</p>
+            <button class="btn btn-outline-light">GET IN TOUCH >></button>
+        </div>
+    </section> -->
+
+    <!-- main content -->
+    <main>
+        <section id="service" class="my-5">
+            <div class="heading mx-auto text-center">
+                <h1>Our Services</h1>
+            </div>
+            <div class="container">
+                <div class="row mx-auto mt-4 ">
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-4">
+                        <div class="card py-5 mt-4 px-2 border-0 px-2">
+                            <div class="card-body">
+                                <i class="fa-solid fa-building"></i>
+                                <div class="card-title mt-3">1.IT Consulting</div>
+                                <div class="card-text pe-3">We specialize in delivering tailored IT consulting services
+                                    that help businesses innovate and streamline operations. Our team harnesses
+                                    cutting-edge technologies to design reliable, scalable, and efficient solutions that
+                                    drive measurable results.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-4">
+                        <div class="card py-5 px-2 mt-4 border-0 px-2">
+                            <div class=" card-body">
+                                <i class="fa-solid fa-school"></i>
+                                <div class="card-title mt-3">2.Global Education Pathways</div>
+                                <div class="card-text pe-3">Naventra takes pride in helping students unlock
+                                    opportunities to study abroad. With support for over 33 countries and partnerships
+                                    with 6000+ universities, we guide students through every step of their academic
+                                    journey.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-4">
+                        <div class="card py-5 px-2 mt-4 border-0 px-2">
+                            <div class=" card-body ">
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <div class="card-title mt-3">3.Trainings & Internships</div>
+                                <div class="card-text pe-3">Empowering professionals with hands-on training and
+                                    real-world insights, our programs are designed to enhance aptitude, communication
+                                    skills, and technical expertise.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="process" class="py-5">
+            <div class="heading mx-auto text-center px-5 mx-5">
+                <h1>Transforming your
+                    business ideas into
+                    impactful digital
+                    solutions with Naventra</h1>
+            </div>
+            <div class="container-md">
+                <div class="row py-5">
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span><i class="fa-solid fa-check"></i> MISSION
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        To empower individuals and businesses
+                                        with exceptional IT solutions, global
+                                        education guidance, and career
+                                        opportunities, fostering innovation and
+                                        success.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span><i class="fa-solid fa-check"></i> VISION</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        To be a globally recognized leader in
+                                        transforming lives through cutting-edge IT
+                                        solutions, holistic education guidance, and
+                                        career development. We envision a future
+                                        where every individual and organization we
+                                        serve achieves their full potential and thrives
+                                        in a connected, technology-driven world.
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span><i class="fa-solid fa-check"></i> PASSION</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We are passionate about transforming lives
+                                        through innovative IT solutions, global
+                                        education, and career empowerment. Our
+                                        commitment is to inspire growth and
+                                        success in everything we do.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-6 mt-lg-0 mt-5">
+                        <img src="assets/img/process.jpg" alt="process1" style="width: 100%;"
+                            class="rounded my-xs-5 img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="heading text-center">
+                <h1>About Us</h1>
+            </div>
+            <div class="container-md mt-5">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="card shadow">
+                            <div class="card-body pt-4">
+                                <p class="fw-bold" style="color: var(--theme-colors);">How it Start</p>
+                                <h2 class="pe-5 fw-medium">Empowering Ambitions, Achieving Excellence</h2>
+                                <div class="text-content pt-0 pt-xl-0 mt-5 mt-xl-0 mt-lg-0 pt-lg-0 pe-4 p-xxl-3">
+                                    <p class="mt-xl-0 mt-xxl-0 pt-xxl-0 mt-2 d-md-block d-lg-block">At
+                                        <b><i>Naventra</i></b>, we are more than just a service provider—we are your
+                                        partners in growth and success. Founded on the principles of excellence,
+                                        innovation, and empowerment, Naventra bridges the gap between ambition and
+                                        achievement for individuals and businesses worldwide.
+                                    </p>
+                                    <p class=" pt-lg-3 pt-0 pt-xxl-0">
+                                        With our expertise spanning <b>IT consulting,global education pathways, and
+                                            professional development</b>, we craft solutions that inspire confidence and
+                                        deliver results. From startups to established enterprises and aspiring students,
+                                        we are committed to transforming lives and enabling success stories.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 img">
+                        <div class="row d-flex flex-column justify-content-start">
+                            <div class="col-12">
+                                <div class="card1 mt-5 mt-lg-0 p-0">
+                                    <div class="card-body1">
+                                        <img src="https://images.pexels.com/photos/926390/pexels-photo-926390.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-926390.jpg&fm=jpg"
+                                            alt="business-img" style="border-radius: 20px;" class="shadow w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pt-5">
+            <div class="heading text-center">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="container-md my-5">
+
+                <div class="row">
+                    <div class="col-lg-7 col-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7024.937441366525!2d78.33585280436378!3d17.510822843202423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9281c600a3ed%3A0x1171d3ad0e44ed2!2sJanapriya%20NileValley!5e0!3m2!1sen!2sin!4v1734282921055!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="rounded-3 w-100"></iframe>
+                    </div>
+                    <div class="col-lg-5 col-12 mt-4 mt-lg-0">
+                        <form method="post">
+                            <div class="form-group">
+                                <!-- <label for="name">Your Name*</label> -->
+                                <input type="text" class="form-control" id="name" placeholder="Your Name*" required
+                                    name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="email">Your Email*</label> -->
+                                <input type="email" class="form-control" id="email" placeholder="Your Email*" required
+                                    name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="subject">Subject</label> -->
+                                <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                    name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="message">Your Message</label> -->
+                                <textarea class="form-control" id="message" rows="6" placeholder="Your Message"
+                                    name="message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary w-100 h-100" name="send"
+                                    style="color: white;height: 100px;font-size: 20px;">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="container-fluid">
+        <!-- <div class="top">
+            <a href="#top-bar"><i class="fa-solid fa-chevron-up"></i></a>
+        </div> -->
+        <div class="row text-light px-3 px-md-5 pt-5 py-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <h5>About Us</h5>
+                <p>We specialize in delivering tailored IT
+                    consulting projects that drive innovation and
+                    efficiency. With a focus on cutting-edge
+                    technologies, we enable businesses to achieve
+                    their goals with precision and confidence.
+                </p>
+            </div>
+            <div class="col-12 col2 col-sm-6 col-lg-4 col-xl-3 mt-3 mt-md-0">
+                <h5>Contact Us</h5>
+                <span>Address:</span><br>
+                Block 3 & 7, Janapriya Nile Valley Apartments, PJR Enclave, <br>Madhavpuri Hills, Chandanagar,
+                Hyderabad, Telangana 500050<br>
+                <span>Phone:+91 9492820027</span><br>
+                <span>Email:</span><br>
+                info@naventra.in
+                <br>
+            </div>
+            <div class="col-12 col-sm-6 mt-md-4 mt-lg-0 col-lg-4 col-xl-3 mt-4 mt-md-0">
+                <h5>Recent Posts</h5>
+                <table style="width: 85%;">
+                    <tr>
+                        <td class="p-1"><img src="./assets/img/company4.jpg" alt="company1"></td>
+                        <td class="p-1"><img src="./assets/img/company1.jpg" alt="company2"></td>
+                        <td class="p-1"><img src="./assets/img/company6.jpeg" alt="company3"></td>
+                    </tr>
+                    <tr>
+                        <td class="p-1"><img src="./assets/img/company5.jpeg" alt="company4"></td>
+                        <td class="p-1"><img src="./assets/img/company1.jpg" alt="company5"></td>
+                        <td class="p-1"><img src="./assets/img/compant2.jpg" alt="company6"></td>
+                    </tr>
+                    <tr>
+                        <td class="p-1"><img src="./assets/img/company9.jpg" alt="company7"></td>
+                        <td class="p-1"><img src="./assets/img/company8.webp" alt="company8"></td>
+                        <td class="p-1"><img src="./assets/img/company7.jpg" alt="company9"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-12 col4 col-sm-6 mt-md-4 mt-lg-0 col-lg-12 col-xl-3 mt-4 mt-md-0">
+                <h5>Subscribe</h5>
+                <p>commodi. Commodi quae deserunt<br>dignissimos.</p>
+                <form id="subscriptionForm">
+                    <input id="emailInput" type="text" placeholder="Your email...">
+                    <button type="button"><i class="fa-regular fa-envelope"></i></button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="f-bottom py-3 px-md-5 px-2">
+
+        <div class="container-fluid">
+            <div class="row text-white">
+                <div class="col-md-6 col-12 copy d-flex justify-content-md-start text-center justify-content-center">
+                    <p>© 2024 Naventra. All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 col-12 follow d-flex justify-content-md-end justify-content-center">
+                    <span>Follow us on:</span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- custom javascript -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Add event listeners to each navigation link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(navLink => {
+                navLink.addEventListener('click', () => {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    navLink.classList.add('active');
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
