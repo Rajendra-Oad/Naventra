@@ -1,0 +1,65 @@
+
+
+nav .nav-link.active {
+  color: var(--theme-colors) !important;
+}
+
+.navbar .nav-item a:is(:link,:active,:visited).active {
+  /* border-bottom: 1px solid var(--theme-colors); */
+  color: var(--theme-colors);
+}
+
+
+
+body {
+  background-color: #f8f9fa; 
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.quote {
+  background-image: url(/assets/img/company8.webp);
+  position: relative;
+  z-index: 111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.color {
+  color: white;
+}
+
+
+
+input {
+  height: 45px !important;
+}
+
+@media (max-width:768px) {
+  .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border: 1px solid transparent;
+      border-radius: 20px; /* Add border radius */
+      background-color: #fff;
+  }
+
+  ::placeholder {
+      color: #00000090;
+  }
+}

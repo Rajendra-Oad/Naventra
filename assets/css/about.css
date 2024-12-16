@@ -1,0 +1,55 @@
+:root {
+  --main-theme: #fff;
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --theme-colors: rgb(31, 198, 31);
+  --googe-font: "Poppins", sans-serif;
+  --f-bottom: #141416;
+  --text-color: #000;
+  --text-50:#00000089;
+  --border-50:#00000054;
+  --nav-icon:#0000001b;
+  --shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  --border-color: none; /* No border in light mode */
+}
+
+
+nav .nav-link.active {
+  color: var(--theme-colors) !important;
+}
+
+.navbar .nav-item a:is(:link,:active,:visited).active {
+  /* border-bottom: 1px solid var(--theme-colors); */
+  color: var(--theme-colors);
+}
+
+
+.about_content p span {
+  color:var(--theme-colors) ;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.quote {
+  background-image: url(/assets/img/company9.jpg);
+  position: relative;
+  z-index: 111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: top;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.color {
+  color: white;
+}
