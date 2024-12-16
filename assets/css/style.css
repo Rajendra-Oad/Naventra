@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--googe-font), sans-serif;
+    transition: all 0.2s;
+    cursor: default !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-theme: #fff;
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --theme-colors: rgb(31, 198, 31);
+    --googe-font: "Poppins", sans-serif;
+    --f-bottom: #141416;
+    --text-color: #000;
+    --text-50:#00000089;
+    --border-50:#00000054;
+    --nav-icon:#0000001b;
+    --shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    --border-color: none; /* No border in light mode */
+}
+
+body {
+    background-color: var(--main-theme);
+    color: var(--text-color);
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .green {
+    color: var(--theme-colors);
+  }
+
+  .color {
+    color: var(--main-theme);
+  }
+  .quote {
+    background-image: url('https://scontent.fblr2-3.fna.fbcdn.net/v/t39.30808-6/301845378_475364144597715_5976594745296211007_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=w-H-4jAEt3UQ7kNvgFcfIYY&_nc_zt=23&_nc_ht=scontent.fblr2-3.fna&_nc_gid=AhmQl9Hbp7Qs5GJYIXUPy8s&oh=00_AYBN_VXqsxk49ty8vSI7RR-BsStG1d-BA1UTPrFQMoXTMg&oe=6764DF3F');
+    position: relative;
+    z-index: 111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+.navbar {
+    background-color: var(--main-theme) !important;
+    color: var(--text-color);
+}
+.navbar  a{
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+
+
+.navbar a:hover{
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--main-theme);
+    color: var(--text-color);
+}
+
+.accordion span{
+    color: var(--text-color);
+}
+
+.accordion .accordion-button {
+    background-color: var(--main-theme) !important;
+}
+
+.accordion .accordion-body {
+    background-color: var(--main-theme) !important;
+    color: var(--text-color) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:var(--main-theme) !important;
+    background: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
+/* navbar css */
+nav {
+    background-color: var(--main-theme) !important;
+    border-bottom: 1px solid var(--border-50);
+}
+
+nav a.navbar-brand span {
+    color: rgb(61, 61, 188);
+}
+
+nav .navbar-toggler {
+    outline: none;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+nav .navbar {
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+
+nav .special-icons img {
+    transition: all 0.1s;
+    background-color: var(--nav-icon);
+}
+
+nav .special-icons:active {
+    transform: scale(0.9);
+
+}
+
+nav .nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+nav .nav-link {
+    position: relative;
+    transition: color 0.2s;
+}
+
+nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--theme-colors);
+    transition: width 0.3s ease;
+}
+
+nav .nav-link:hover::after,
+nav .nav-link:focus::after {
+    background-color: var(--theme-colors);
+    width: 100%;
+    left: 0;
+}
+
+nav .nav-link.active {
+    color: var(--theme-colors) !important;
+}
+
+.navbar .nav-item a:is(:link,:active,:visited).active {
+    /* border-bottom: 1px solid var(--theme-colors); */
+    color: var(--theme-colors);
+}
+
+nav a.nav-icon {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+nav .nav-item.icon {
+    background-color: var(--theme-colors);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #000 !important;
+    transition: all 0.7s;
+}
+
+nav .nav-icon:active i {
+    transform: rotate(720deg);
+}
+
+/* banner css */
+#banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+}
+#banner img {
+    width: 100px !important;
+    height: 100px !important;
+    overflow-x: hidden;
+}
+
+
+
+/* service css */
+
+#service i {
+    color: var(--theme-colors);
+    font-size: 28px;
+}
+
+#service .row .card {
+    box-shadow: var(--shadow) !important;
+    animation: ani 2s alternate;
+    transition: 0.5s;
+    height: 400px;
+
+}
+
+#service .row .card:hover {
+    transform: scale(0.99);
+    box-shadow: var(--shadow) !important;
+}
+
+#service .heading::after {
+    content: "";
+    width: 70px;
+    margin: 10px auto 0;
+    display: block;
+    background-color: var(--theme-colors);
+    height: 3px;
+}
+
+#service .row .card .card-body .card-title {
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.85;
+}
+
+#service .row .card .card-body .card-text {
+    font-size: 18px;
+}
+#service .card .card-text {
+    color: var(--text-50);
+}
+
+#service .card {
+    border: 1px solid var(--border-color) !important; /* Add border based on variable */
+}
+
+/* main inside the process section */
+
+#process i {
+    color: var(--theme-colors);
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#process .heading::after {
+    content: "";
+    width: 70px;
+    margin: 10px auto 0;
+    display: block;
+    background-color: var(--theme-colors);
+    height: 3px;
+    margin-bottom: 50px;
+}
+
+
+/* Latest-news--section */
+
+#news .heading::after {
+    content: "";
+    width: 70px;
+    margin: 10px auto 0;
+    display: block;
+    background-color: var(--theme-colors);
+    height: 3px;
+    margin-bottom: 50px;
+}
+
+#news .card-title {
+    color: var(--theme-colors);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#news .card {
+    border: 1px solid var(--border-50) !important;
+}
+
+#news .card .card-footer {
+    border-top: 1px solid var(--border-50);
+}
+
+
+#news img {
+    border-radius: 5px;
+}
+
+/* contact section */
+
+#contact {
+    overflow-x: hidden;
+}
+
+#contact .heading::after {
+    content: "";
+    width: 70px;
+    margin: 10px auto 0;
+    display: block;
+    background-color: var(--theme-colors);
+    height: 3px;
+    margin-bottom: 50px;
+}
+
+#contact .form-group {
+    margin-bottom: 20px;
+}
+
+
+#contact .btn-primary {
+    background-color: var(--theme-colors);
+    color: #000;
+    border: 1px solid var(--main-theme);
+    transition: all 0.7s;
+}
+
+
+#contact .btn-primary:hover {
+    background-color: var(--theme-colors);
+    color: #000;
+    border: 1px solid var(--theme-colors);
+}
+
+#contact input {
+    height: 45px !important;
+    background-color: var(--main-theme) !important;
+    color: var(--secondary-color);
+}
+
+#contact textarea {
+    background-color: var(--main-theme) !important;
+}
+
+#contact ::placeholder {
+    color: var(--text-50) !important;
+}
+
+@media (max-width:768px) {
+    #contact .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        /* Add border radius */
+        /* background-color: var(--theme-colors); */
+    }
+
+    #contact ::placeholder {
+        color: var(--text-color) !important;
+    }
+}
+
+/* about section */
+
+#about {
+    overflow-x: hidden;
+}
+
+#about .heading::after {
+    content: "";
+    width: 70px;
+    margin: 10px auto 0;
+    display: block;
+    background-color: var(--theme-colors);
+    height: 3px;
+    margin-bottom: 50px;
+}
+
+#about .card {
+    border-radius: 20px !important;
+    border: 1px solid var(--border-color);
+    background-color: var(--main-theme) !important;
+}
+
+#about .card-body.head-rate span {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--theme-colors);
+}
+
+#about .card-body p {
+    color: var(--text-color);
+}
+
+#about.card1 .card-body1 img {
+    overflow: hidden;
+    width: 100% !important;
+}
+
+#about.card1 {
+    border: 1px solid var(--border-color);
+}
+
+#about.container-md .card1 {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+#about img {
+    overflow-x: hidden;
+}
+
+@media (max-width:576px) {
+    #about .img {
+        overflow: hidden;
+    }
+}
+
+/* footer section */
+footer {
+    background-color: #0E0F11;
+    overflow-x: hidden;
+    position: relative;
+}
+
+footer .col2 span {
+    line-height: 30px;
+    color: var(--theme-colors);
+}
+
+footer .col4 form input {
+    background-color: #0E0F11;
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    padding: 9.2px;
+    color: #F6F7F9;
+    outline: none;
+    width: 200px;
+    position: relative;
+    border-right: none;
+}
+
+footer .col4 form input:hover,
+footer .col4 form input:active {
+    border-right: none;
+}
+
+footer .col4 form button {
+    background-color: var(--theme-colors);
+    padding: 9.98px 15px;
+    position: absolute;
+    right: 10px 15px;
+    border: 0;
+    color: var(--secondary-color);
+}
+
+footer .col4 form button:hover {
+    background-color: var(--theme-colors);
+}
+
+footer table tr td {
+    border: 1px solid rgba(128, 128, 128, 0.255);
+    /* padding: 5px; */
+}
+
+footer table tr td:hover {
+    border: 1px solid var(--secondary-color);
+}
+
+footer table tr td img {
+    width: 100%;
+}
+
+footer table {
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+/* footer .top a{
+    text-decoration: none;
+}
+
+footer .top {
+    background-color: var(--main-theme);
+    color: var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 50px;
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    transform: translate(-50%,-50%);
+} */
+
+.f-bottom {
+    background-color: var(--f-bottom);
+    color: var(--secondary-color);
+}
+
+.f-bottom .copy span {
+    color: var(--theme-colors);
+}
+
+.f-bottom .follow>i {
+    margin: 5px !important;
+}
+
+.f-bottom .row .col p {
+    margin-bottom: 0 !important;
+}
